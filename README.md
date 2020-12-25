@@ -21,7 +21,7 @@ IsLeaf = λx.{VM_isLeaf x, returns T or F}
 
 Pair = λx.λy.λz.zxy
 
-Curry = λx.λy.x(pair x y), where x is often designed to call (Curry x) in some cases and (L x) and (R x) etc. //FIXME dont want to lose comment param
+Curry = λx.λy.x(pair x y), where x is often designed to call (Curry x) in some cases and (L x) and (R x) etc. //FIXME dont want to lose comment param... so todo use the full call (a b c comment x) aka (a_kind_of_curry x) instead of x in that pair
 
 //Curry = λx.λy.x(pair (Curry x) y) //I might use λx.λy.x(pair x y) instead?
 
