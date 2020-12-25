@@ -54,11 +54,11 @@ public class ComputeForward{
 	but not all of them can be true in all combos, which is what the bayes math is for converging toward a consistent combo of.
 	*/
 	public boolean isValidCachekeyFor_debugStepOverOf(Node callquad, Node cacheKey){
-		//if(!callquad.func().isDone) return false;
-		//if(!callquad.param().isDone) return false;
+		if(!callquad.func().isDone) return false;
+		if(!callquad.param().isDone) return false;
 		//FIXME check if(Node.cur(callquad))
 		//FIXME verify cachekey's func and param are isdone and cachekey is NOT isdone (1 deep to still eval)
-		return callquad.cacheKey == cacheKey; //Is this all thats needed?
+		return callquad.func()==cacheKey.func() && callquad.param()==cacheKey.param(); //Is this all thats needed?
 	}
 	
 	public Node debugStepOver(Node callquad, boolean whichMultiverseBranch, Node cacheKey){
