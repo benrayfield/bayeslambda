@@ -2,6 +2,7 @@ package bayeslambda;
 import java.util.HashMap;
 import java.util.Map;
 
+/** immutable */
 public final class Node{
 
 	/** 1 of 2 leafs which all paths lead to 1 of */
