@@ -34,9 +34,9 @@ https://en.wikipedia.org/wiki/SKI_combinator_calculus
 
 ---things which can be derived from it---
 
-L = (S (T pairOfLROf) (T T))
+L = (S pairOfLROf (T T))
 
-R = (S (T pairOfLROf) (T F))
+R = (S pairOfLROf (T F))
 
 Will check specificly for those as an optimization, similar to how other things will be compiled.
 
