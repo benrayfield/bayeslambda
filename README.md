@@ -31,12 +31,12 @@ https://en.wikipedia.org/wiki/SKI_combinator_calculus
 ---things which can be derived from it---
 
 L = (S (T pairOfLROf) (T T))
+
 R = (S (T pairOfLROf) (T F))
+
 Will check specificly for those as an optimization, similar to how other things will be compiled.
 
-
-
-
+Possibly may lead to the simplest and most intuitive proof that P != NP, which proofs may already exist for but is just so lost in deep abstraction that people either dont care or dont believe it... https://en.wikipedia.org/wiki/P_versus_NP_problem But there are bigger things to think about than abstract math proofs, such as the efficiency of sharing pure math/lambda functions across the internet at gaming low lag and what fun tools and serious number crunching tools etc could be built with it maybe.
 
 
 ---disorganized text below---
