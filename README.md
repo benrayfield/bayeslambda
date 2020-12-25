@@ -1,0 +1,2 @@
+# bayeslambda
+A set of math axioms which relate Bayes Rule to a certain universal function and the often-infinitely-expensive-to-compute facts of which lambda calls do and do not halt, including a doesNotHalt symbol. The universal function always curries 7 parameters and in practice in p2p networks does not "fork blockchains" but smoothly negotiates using bayes rule in terms of function called on function creates/finds what function. Functions will support unicode, voxels, and low lag musical instruments.
