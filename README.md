@@ -31,11 +31,14 @@ trydeterminismelse_and_tightenToDeterministic = Lx.Ly.Lz.{nondeterministicly: (x
 
 This is a universal lambda function (combinator) and a pattern calculus function, and does not always halt but in practice due to bayes rule negotiation will statistically tend to slide in the statistical space toward agreement among many on a set of function(parameter)->return which together all possible combos of do halt near instantly, each doing a small piece of work. It may be viewed in that theoretical way as a system of mass production of functions which always quickly halt (like SQL always halts) and do useful work.
 
+
 Relevant links:
 
 https://en.wikipedia.org/wiki/Bayes%27_theorem
 
 https://en.wikipedia.org/wiki/SKI_combinator_calculus
+
+Proof of turing completeness relevant to https://en.wikipedia.org/wiki/Iota_and_Jot : iota = (pair S K), such as (iota iota iota) -> iota, and (iota (iota (iota (iota iota)))) -> S, and (iota (iota (iota iota))) -> K. (TODO check my iota test cases in various other forks of occamsfuncer, make sure I got the number of iota recursions right there).
 
 
 ---things which can be derived from it---
