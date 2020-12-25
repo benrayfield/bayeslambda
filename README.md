@@ -38,7 +38,7 @@ https://en.wikipedia.org/wiki/Bayes%27_theorem
 
 https://en.wikipedia.org/wiki/SKI_combinator_calculus
 
-Proof of turing completeness relevant to https://en.wikipedia.org/wiki/Iota_and_Jot : iota = (pair S K), such as (iota iota iota) -> iota, and (iota (iota (iota (iota iota)))) -> S, and (iota (iota (iota iota))) -> K. (TODO check my iota test cases in various other forks of occamsfuncer, make sure I got the number of iota recursions right there).
+Proof of turing completeness relevant to https://en.wikipedia.org/wiki/Iota_and_Jot : iota = (pair S T), such as (iota iota iota) -> iota, and (iota (iota (iota (iota iota)))) -> S, and (iota (iota (iota iota))) -> T, and (iota iota aCertainJpgImageOfACat) -> aCertainJpgImageOfACat. (TODO check my iota test cases in various other forks of occamsfuncer, make sure I got the number of iota recursions right there).
 
 
 ---things which can be derived from it---
