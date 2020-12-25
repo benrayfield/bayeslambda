@@ -25,7 +25,7 @@ Curry = Lx.Ly.x(pair (Curry x) y)
 
 trydeterminismelse_and_tightenToDeterministic = Lx.Ly.Lz.{nondeterministicly: (x leaf) or (y leaf), or tightenToDeterminismRecursively if (isLeaf z), and counts as deterministic whenever it returns (x leaf) even if nondeterminism would be allowed that nondeterminism was not used such as if it does not run out of memory or compute cycles etc then it is repeatable by anyone on the internet you give 2 lambdas to call one on the other which led to this, and especially this can be defined as the 2 possible branches in fntape (see occamsfuncer readme) to literally explore the gametree/gameweb of all possible functions so can nondeterministicly return any function at all from that since its known that is within the gametree/gameweb, or it can be called with other params than how to build a fntape}
 
-This is a universal lambda function (combinator) and a pattern calculus function, and does not always halt but in practice due to bayes rule negotiation will statistically tend to slide in the statistical space toward agreement among many on a set of function(parameter)->return which together all possible combos of do halt near instantly, each doing a small piece of work.
+This is a universal lambda function (combinator) and a pattern calculus function, and does not always halt but in practice due to bayes rule negotiation will statistically tend to slide in the statistical space toward agreement among many on a set of function(parameter)->return which together all possible combos of do halt near instantly, each doing a small piece of work. It may be viewed in that theoretical way as a system of mass production of functions which always quickly halt (like SQL always halts) and do useful work.
 
 Relevant links:
 
