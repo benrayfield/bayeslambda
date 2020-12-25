@@ -23,8 +23,6 @@ Pair = λx.λy.λz.zxy
 
 (comment Curry) = λcomment.λignore.λx.λy.x(pair (...λcomment.λignore.λx...) y) //TODO write this more precisely
 
-//Curry = λx.λy.x(pair (Curry x) y) //I might use λx.λy.x(pair x y) instead?
-
 //Curry = λx.λy.x(pair x y), where x is often designed to call (Curry x) in some cases and (L x) and (R x) etc. //FIXME dont want to lose comment param... so todo use the full call (leaf a b c comment x) aka (a_kind_of_curry x) instead of x in that pair
 
 //Curry = λx.λy.x(pair (Curry x) y) //I might use λx.λy.x(pair x y) instead?
