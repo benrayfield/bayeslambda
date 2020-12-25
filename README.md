@@ -21,7 +21,8 @@ IsLeaf = Lx.{VM_isLeaf x, returns T or F}
 
 Pair = Lx.Ly.Lz.zxy
 
-Curry = Lx.Ly.x(pair (Curry x) y) //I might use Lx.Ly.x(pair x y) instead?
+Curry = Lx.Ly.x(pair x y), where x is often designed to call (Curry x) in some cases and (L x) and (R x) etc.
+//Curry = Lx.Ly.x(pair (Curry x) y) //I might use Lx.Ly.x(pair x y) instead?
 
 trydeterminismelse_and_tightenToDeterministic = Lx.Ly.Lz.{nondeterministicly: (x leaf) or (y leaf), or tightenToDeterminismRecursively if (isLeaf z), and counts as deterministic whenever it returns (x leaf) even if nondeterminism would be allowed that nondeterminism was not used such as if it does not run out of memory or compute cycles etc then it is repeatable by anyone on the internet you give 2 lambdas to call one on the other which led to this, and especially this can be defined as the 2 possible branches in fntape (see occamsfuncer readme) to literally explore the gametree/gameweb of all possible functions so can nondeterministicly return any function at all from that since its known that is within the gametree/gameweb, or it can be called with other params than how to build a fntape}
 
