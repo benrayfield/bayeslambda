@@ -8,8 +8,8 @@ but I do expect it is infinitely precise math,
 and the chance of all possibilities totals 1.0,
 and unlike chaitinsConstant (haltingProbability)
 is well defined in all parts (cuz thats an infinite sum that doesnt converge
-as it sums 2^0 things, sums 2^1 things in with that,
-sums 2^2 things in with that, ... sums 2^n things in with that,
+as it sums (weighted averages) 2^0 things, sums 2^1 things in with that,
+sums 2^2 things in with that, ... sums 2^n things in with that...
 each of which is well defined but together does not converge,
 though I havent looked deeply into it so am not completely sure about chaitins constant.
 In this system, haltingProbability is 100% and every call pair halts in constant time
