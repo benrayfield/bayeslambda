@@ -24,10 +24,11 @@ The chance of each of those 3 bit vars is sum of a specific 4 numbers among thos
 Various bayesnodes partially overlap, having some bayesvars in common and others not in common.
 In this bayeslambda system, there is 1 correct set of bayesweights, with no ambiguity, and no state,
 other than it will appear stateful to approximate the space of all possibilities.
-The space of all possibilities is a single bayesnode of, somewhere around the 2 exponent
-the number of integers] number of weights which all sum to 1 and each is a possibility
+The space of all possibilities is a single bayesnode of, somewhere around [2 exponent
+the quantity of all possible integers, as the number of possible forest nodes maps 1-to-1 with the integers]
+number of weights which together sum to 1 and each is a possibility
 thats either allowed or not allowed
-and is 3sat-like in that way but statistically is better to view it statistically.
+and is 3sat-like in that way but is better to view it statistically.
 */
 public class BayesNode implements IntToDoubleFunction{
 	
