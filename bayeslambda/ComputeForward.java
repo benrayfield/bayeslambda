@@ -41,8 +41,35 @@ public class ComputeForward{
 	/** some callquads have 2 possible next callquads (trydeterminismelse_and_tightenToDeterministic),
 	and others have only 1 possible next callquad aka this returns the same Node regardless of whichMultiverseBranch.
 	*/
-	public Node next(Node callquad, boolean whichMultiverseBranch){
+	public Node debugStepInto(Node callquad, boolean whichMultiverseBranch){
+		TODO
+	}
+	
+	/** FIXME this might get into paradoxes with not knowing which of multiple deeper calculations already
+	did which whichMultiverseBranch bits (which of 2 4 8 16 32... possible ways it chose (excluding others) in deeper calculations)
+	but if the bayes constraints are solved then it should all work out, that even though there may be an exponential number
+	of valid cacheKeys for the same callquad to use to debugStepOver (using a <func,param,return> in the cacheKey,
+	which tells what return value to use for the <func,param> in this callquad param (and all it does is
+	match that func and param between callquad and cacheKey)... those are all possibilities to explore in the bayes math,
+	but not all of them can be true in all combos, which is what the bayes math is for converging toward a consistent combo of.
+	*/
+	public boolean isValidCachekeyFor_debugStepOverOf(Node callquad, Node cacheKey){
+		//if(!callquad.func().isDone) return false;
+		//if(!callquad.param().isDone) return false;
+		//FIXME check if(Node.cur(callquad))
+		//FIXME verify cachekey's func and param are isdone and cachekey is NOT isdone (1 deep to still eval)
+		return callquad.cacheKey == cacheKey; //Is this all thats needed?
+	}
+	
+	public Node debugStepOver(Node callquad, boolean whichMultiverseBranch, Node cacheKey){
+		if(!isValidCachekeyFor_debugStepOverOf(callquad, cacheKey)) throw new RuntimeException(
+			"Invalid combo. You can always debugStepInto instead which will reach the same return value eventually.");
 		
+		TODO copy and modify some code from occamsfuncer OcfnUtil.step function,
+		which unlike this, inlines the choice between debugStepInto vs debugStepOver
+		by checking if the <func param return> cache exists in a map and if it does then debugStepOver
+		else debugStepInto, so it always chooses the fastest path, but here we want to explore more paths sparsely
+		to have more perspectives at once to converge the constraints consistently using bayes rule.
 	}
 
 }
