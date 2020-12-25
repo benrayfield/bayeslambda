@@ -7,7 +7,7 @@ This can be done with only 6 params of the universal function if you dont care i
 
 This is the universal function:
 
-8 opcodes, which all curry exactly 7 params, and which of 8 is chosen by the first 3 of 7 curried params each being leaf or anything except leaf, and param_4_of_7 is comment/ignoredExceptByLAndR:
+8 opcodes, which all curry exactly 7 params (if they mention less than 7, then its La.Lb.Lc.Ld... before that)_, and which of 8 is chosen by the first 3 of 7 curried params each being leaf or anything except leaf, and param_4_of_7 is comment/ignoredExceptByLAndR:
 
 S = Lx.Ly.Lz.xz(yz)
 
