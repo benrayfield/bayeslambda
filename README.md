@@ -3,6 +3,8 @@
 
 In abstract math, though in practice will be very very sparse, every binary forest node (a node is 1 of: theUniversalFunction, doesNotHalt, or a lambda call pair of 2 nodes whose L child and R child obey the axiom that (L x (R x)) equals x, for all x). There are, in abstract math, a single bit for each possibility in the powerset of bayes nodes, and sparsely viewed those 3sat-like bits form into scalar weights, of course as usual the sum of all weights of a bayes node (or sparsely is called a bayes net) sum to 1.0. Imagine its sparse state as each binary forest node can be true, false, or unknown, and combos of them like NAND can be represented as a bayes node of 8 weights and 3 nodes, relating the logic of 3 bit variables. Similarly, bayes math will apply smoothly connecting every possible function with every other possible function.
 
+This can be done with only 6 params of the universal function if you dont care if its intuitive for Humans, but the comment parameter (number 4 of 7 params) is where you would put icon pixels, comment text, andOr various other things, a general storage space that is entirely ignored by the bayes and lambda math other than to acknowledge its existence in the binary forest plus whatever behaviors may be desired to check for various patterns of info in the comments.
+
 This is the universal function:
 
 8 opcodes, which all curry exactly 7 params, and which of 8 is chosen by the first 3 of 7 curried params each being leaf or anything except leaf, and param_4_of_7 is comment/ignoredExceptByLAndR:
