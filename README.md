@@ -9,21 +9,23 @@ This is the universal function:
 
 8 opcodes, which all curry exactly 7 params (if they mention less than 7, then its La.Lb.Lc.Ld... before that)_, and which of 8 is chosen by the first 3 of 7 curried params each being leaf or anything except leaf, and param_4_of_7 is comment/ignoredExceptByLAndR:
 
-S = Lx.Ly.Lz.xz(yz)
+S = λx.λy.λz.xz(yz)
 
-T =  Lx.Ly.x
+T =  λx.λy.x
 
-FI = Lx.Ly.y
+FI = λx.λy.y
 
-pairOfLROf = Lx.(pair (VM_L x) (VM_R x))
+pairOfLROf = λx.(pair (VM_L x) (VM_R x))
 
-IsLeaf = Lx.{VM_isLeaf x, returns T or F}
+IsLeaf = λx.{VM_isLeaf x, returns T or F}
 
-Pair = Lx.Ly.Lz.zxy
+Pair = λx.λy.λz.zxy
 
-Curry = Lx.Ly.x(pair x y), where x is often designed to call (Curry x) in some cases and (L x) and (R x) etc.
+Curry = λx.λy.x(pair x y), where x is often designed to call (Curry x) in some cases and (L x) and (R x) etc.
 
-//Curry = Lx.Ly.x(pair (Curry x) y) //I might use Lx.Ly.x(pair x y) instead?
+//Curry = λx.λy.x(pair (Curry x) y) //I might use λx.λy.x(pair x y) instead?
+
+(in all text below, view Lx Ly Lf etc as λx λy λf etc...)
 
 trydeterminismelse_and_tightenToDeterministic = Lx.Ly.Lz.{nondeterministicly: (x leaf) or (y leaf), or tightenToDeterminismRecursively if (isLeaf z), and counts as deterministic whenever it returns (x leaf) even if nondeterminism would be allowed that nondeterminism was not used such as if it does not run out of memory or compute cycles etc then it is repeatable by anyone on the internet you give 2 lambdas to call one on the other which led to this, and especially this can be defined as the 2 possible branches in fntape (see occamsfuncer readme) to literally explore the gametree/gameweb of all possible functions so can nondeterministicly return any function at all from that since its known that is within the gametree/gameweb, or it can be called with other params than how to build a fntape}
 
